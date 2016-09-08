@@ -1,0 +1,100 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="user_MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Mail Server</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <link href="template/style.css" rel="stylesheet" />
+    <link href="template/StyleSheet.css" rel="stylesheet" />
+     <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+<div id="wrap">
+  <div class="header">
+    <div class="image">
+     <div class="image2">
+        <a href="editprofilepic.aspx">
+         <asp:Image ID="Image1" runat="server" Height="138px" style="margin-left: 5px;" 
+            Width="135px" /></a>
+        <br />
+        </div>
+        
+        <div class="name">
+            <asp:Label ID="lblname" runat="server" Font-Bold="True" Font-Size="Medium" 
+            ForeColor="#3E3A69" BackColor="#9F9FFF" Font-Italic="True"></asp:Label></div>
+        
+      </div>
+    <div class="menu_nav">
+
+    <div class="clr"></div>
+    <div class="clr"></div>
+    <div class="clr"></div>
+  <div class="clr"></div>
+  <div class="clr"></div>
+  <div class="clr"></div>
+<div class="clr"></div>
+  <div class="clr"></div>
+        <ul>
+          <li class="active"><a href="inboxview.aspx"><span>Home Page</span></a></li>
+          <li><asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click">Log Out</asp:LinkButton>&nbsp;</li>
+          <li>&nbsp;<asp:LinkButton ID="LinkButton2" runat="server" onclick="LinkButton2_Click" Height="16px" Width="82px">event</asp:LinkButton>&nbsp;&nbsp; </li>
+          <li> <asp:TextBox ID="txtsearch" runat="server"></asp:TextBox></li>
+           <li><asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">search mail</asp:LinkButton></li>
+        </ul>
+      </div>
+  </div>
+    <div class="clr"></div>
+  <div class="center_content">
+    <div class="right_content">
+    <div class="article">
+     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </div>
+    <!--end of left content-->
+    <div class="left_content">
+      <div class="right_box">
+        <div class="title">Related Links</div>
+        <ul class="list">
+          <li><a href="changepass.aspx">Change Password</a></li>
+           <li><a href="Editprofile.aspx">Edit Profile</a></li>
+          <li><a href="composemsg.aspx">Compose Mail</a></li>
+          <li><a href="inboxview.aspx">Inbox</a></li>
+          <li><a href="sendview.aspx">Sent Mail</a></li>
+          <li><a href="draftview.aspx">Draft</a></li>
+            <li><a href="trashview.aspx">Trash</a></li>
+         <li><a href="eventdetails.aspx">Add an event</a></li>
+          
+       
+      </ul>
+       <div class="clr"></div>
+    <div class="clr"></div>
+  <div class="clr"></div>
+  <div class="clr"></div>
+  <div class="clr"></div>
+<div class="clr"></div>
+ <div class="clr"></div>
+    <div class="clr"></div>
+  <div class="clr"></div>
+  <div class="clr"></div>
+
+      </div>
+    </div>
+    <!--end of right content-->
+    <div class="clear"></div>
+  </div>
+  <!--end of center content-->
+  <div class="footer">
+    <div class="right_footer"> <p>Designed By Sitikantha</p></div>
+  </div>
+</div>
+    </form>
+</body>
+</html>
+
+
+

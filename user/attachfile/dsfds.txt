@@ -1,0 +1,12 @@
+                    SmtpClient serverobj = new SmtpClient();
+                    serverobj.Credentials = new NetworkCredential("sitikanthamallik@gmail.com", "barca12345");
+                    serverobj.Port = 587;
+                    serverobj.Host = "smtp.gmail.com";
+                    serverobj.EnableSsl = true;
+                    MailMessage msgob = new MailMessage();
+                    msgob.From = new MailAddress("sitikanthamallik@gmail.com", "Password Info", System.Text.Encoding.UTF8);
+                    msgob.To.Add(txtemail.Text);
+                    msgob.Subject = "Password Vefification";
+                    msgob.Body = "Your Password Is : " + ob.ds.Tables[0].Rows[0].ItemArray[1].ToString();
+                    msgob.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
+                    serverobj.Send(msgob);

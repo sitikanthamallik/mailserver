@@ -1,0 +1,45 @@
+﻿.htblstyle
+{
+    border: 4px solid #371C00;
+    font-size: 14px;
+    font-weight: lighter;
+    font-style: normal;
+    width: 484px;
+    text-align: center;
+    height: 212px;
+    background: transparent url(template/images/tblbackground2.jpg) no-repeat;
+}
+.htblheader
+{
+    font-size: 16px;
+    font-weight: bolder;
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: center;
+     background: transparent url(template/images/tblheader.jpg) no-repeat;
+}
+.tblstyle
+{
+    border: 4px solid #375EDF;
+    font-size: 14px;
+    font-weight: lighter;
+    font-style: normal;
+    color: #1C1C2B;
+    background-color: #CCDDFF;
+    width: 429px;
+}
+.tblheader
+{
+    background-color: #6699FF;
+    font-size: 16px;
+    font-weight: bolder;
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: center;
+}
+.divid
+{
+    margin:0 auto;
+    width:422px;
+   
+}

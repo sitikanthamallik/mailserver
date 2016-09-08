@@ -1,0 +1,121 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<html>
+
+<head>
+  <title>ExMail Server</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+    <link href="template/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="template/js/modernizr-1.5.min.js" type="text/javascript"></script>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+   <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+<form id="form1" runat="server">
+  <div id="main">		
+
+    <header>
+	  <div id="strapline">
+	    <div id="welcome_slogan">
+            <br />
+	      <h3>  ExMail Server</h3>
+	    </div><!--close welcome_slogan-->
+      </div><!--close strapline-->	  
+	  <nav>
+	    <div id="menubar">
+          <ul id="nav">
+            <li class="current"><a href="homepage.aspx">Home</a></li>
+            <li><a href="adminlogin.aspx">Admin</a></li>
+            <li><a href="userlogin.aspx">User</a></li>
+               <li><a href="userreg.aspx">Sign Up</a></li>
+             <li><a href="aboutus.aspx">About Us</a></li>
+    <li><a href="contactus.aspx">Contact Us</a></li>
+          </ul>
+        </div><!--close menubar-->	
+      </nav>
+    </header>
+    
+	<div id="site_content">		
+	  
+	  <div class="sidebar_container">       
+		<div class="sidebar">
+          <div class="sidebar_item">
+          <ul>
+          <li><a href="viewhoroscope.aspx">Horoscope</a></li>
+            <li><a href="viewnews.aspx">News</a></li>
+            </ul>
+           
+          </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->     		
+		  <!--close sidebar-->
+		<div class="sidebar">
+            <!--close sidebar_item--> 
+        </div><!--close sidebar-->  		
+        <div class="sidebar">
+          <div class="sidebar_item">
+            <h2>Contact</h2>
+            <p>Phone: +91 -7809673886</p>
+            <p>Email: <a href="mailto:sitikanthamallik@gmail.com">sitikanthamallik@gmail.com</a></p>
+          </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->
+       </div><!--close sidebar_container-->	
+
+      <div class="slideshow">
+	    <ul class="slideshow">
+          <li class="show"><img width="680" height="250" src="template/images/email3.jpg"  /></li>
+          <li><img width="680" height="250" src="template/images/email.jpg"  /></li>
+          <li><img width="680" height="250" src="template/images/Email-Marketing.jpg"  /></li>
+           <li><img width="680" height="250" src="template/images/images.jpg"  /></li>
+             <li><img width="680" height="250" src="template/images/email-marketing2.jpg"  /></li>
+          <li><img width="680" height="250" src="template/images/fd.jpg"  /></li>
+           <li><img width="680" height="250" src="template/images/ff.jpg"  /></li>
+                    
+        </ul> 
+	  </div>
+	   
+	  <div id="content">
+        <div class="content_item">
+		   <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+		  
+		</div><!--close content_item-->
+      </div><!--close content-->   
+	</div><!--close site_content-->  	
+        
+      <div class="footer">
+	  <br/><br/>
+	  <p style="color=yellow;">Designed by Sitikantha&nbsp;</p> 
+    </div>
+	
+  </div><!--close main-->
+  
+  <!-- javascript at the bottom for fast page loading -->
+    <script src="template/js/jquery.min.js" type="text/javascript"></script>
+    <script src="template/js/image_slide.js" type="text/javascript"></script>
+    </form>
+</body>
+</html>
+
+<%--<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>--%>
